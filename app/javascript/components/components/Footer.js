@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Nav, NavItem } from 'reactstrap'
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     const {
       logged_in,
@@ -14,7 +14,7 @@ class Header extends Component {
     console.log("current_user:", current_user)
     return(
       <>
-        <h1>REC S#!T</h1>
+        <h5>Team JDSV Footer</h5>
         <Nav>
           {logged_in &&
             <NavItem>
@@ -36,4 +36,4 @@ class Header extends Component {
     )
   }
 }
-export default Header
+export default Footer
