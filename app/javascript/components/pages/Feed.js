@@ -8,4 +8,4 @@ class Feed extends Component {
   }
 }
 
-export default Home
+export default Feed
