@@ -21,6 +21,6 @@ user2.posts.create([{ location: "Hong Kong", review:"Alll's good", star_rating: 
 
 User.create([{ email: "test3@test.com", password: "password", password_confirmation: "password", name: "testuser3", picture: "", userLocation:"Tijuana", aboutme:"That's all." }])
 
-user3 = User.second
+user3 = User.third
 
 user3.posts.create([{ location: "Crypto.com Arena AKA:Staple Center", review:"Alll's good", star_rating: 5, picture:"", day: "true", user_id: 3 }])
