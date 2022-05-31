@@ -5,6 +5,8 @@
     "@rails/ujs": "^6.0.5",
     "@rails/webpacker": "5.4.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "cheerio": "^1.0.0-rc.11",
+    "jest": "^28.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -15,6 +17,18 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "react-test-renderer": "^18.1.0",
     "webpack-dev-server": "^3"
+  },
+  "jest": {
+    "roots": [
+      "app/javascript/components"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/app/javascript/components/fileMock.js"
+    }
   }
 }

@@ -1,11 +1,19 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import Singlecard from '../components/Singlecard';
 class Feed extends Component {
-  render() {
-    return(
-      <h3>This is the Feed/Index Page</h3>
-    )
-  }
+    render() {
+        return (
+            <div className="feedpage">
+                <div className='feed-cards'>
+                    <Singlecard />
+                    <Singlecard />
+                    <Singlecard />
+                    <Singlecard />
+                    <Singlecard />
+                </div>
+            </div>
+        );
+    }
 }
 
-export default Feed
+export default Feed;
