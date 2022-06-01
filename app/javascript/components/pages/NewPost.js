@@ -54,7 +54,7 @@ class NewPost extends Component {
                             What do you have to say?
                         </Label>
                         <Input className='new-text'
-                            id="exampleText"
+                            id="status"
                             name="text"
                             placeholder='What do you have to say?'
                             type="textarea"
