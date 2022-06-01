@@ -60,7 +60,7 @@ class Header extends Component {
             <header className="header">
 
                 <Nav>
-                    <img width="50px" height="50px" src="https://user-images.githubusercontent.com/10421828/79436261-52159b80-7fd9-11ea-994e-2a98dd43e540.png" alt="" />
+                    <img width="50px" height="50px" src="https://lh3.googleusercontent.com/D30h22DafCF95u51zYWed7G2Y6N2dtUENoYBadTlFCvo_uEMPHeywxISg71UKAUC3V4NpoIQeEfttO5t3GtgjBGTgSfXwwC5bFitbrlrA8f_NNCUgZLTNyw3VJaCig14bqL2-hVn=w2400" alt="" />
                     <div>
                         <Modal isOpen={this.state.signUpModal} toggle={this.toggleSignUp} >
                             <ModalHeader toggle={this.toggleSignUp}>SIGN UP</ModalHeader>
