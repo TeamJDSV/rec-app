@@ -83,13 +83,7 @@
      border-radius: 20px;
      padding: 5px 10px;
  }
- 
- .profile-img {
-     border-radius: 50%;
-     display: block;
-     margin-bottom: 15px;
- }
- 
+  
  .limited-info {
      background-color: white;
      padding: 0 20px;
@@ -352,4 +346,20 @@
     flex: 1;
     height: calc(100vh - 104px);
 
+}
+
+.signupform2 {
+    padding: 10px;
+}
+
+
+.profile-img {
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.profile-img h2 {
+    margin-left: 54px;
 }
