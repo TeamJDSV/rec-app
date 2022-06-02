@@ -5,11 +5,13 @@ import Footer from './components/Footer'
 
 import Home from './pages/Home'
 import Feed from './pages/Feed'
+import MyFeed from './pages/MyFeed'
 import Show from './pages/Show'
 import NewPost from './pages/NewPost'
 import EditPost from './pages/EditPost'
 import AboutUs from './pages/AboutUs'
 import NotFound from './pages/NotFound'
+
 
 import {
   BrowserRouter as Router,
@@ -34,6 +36,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} /> 
             <Route path="/feed" component={Feed} />
+            <Route path="/myfeed" component={MyFeed} />
             <Route path="/show/:id" component={Show} />
             <Route path="/newpost" component={NewPost} />
             <Route path="/editpost" component={EditPost} />
