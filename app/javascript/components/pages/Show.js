@@ -15,7 +15,7 @@ class Show extends Component {
                             Night-Life
                         </Badge>
                         <p className='locations'>Enbrayer Concert @ Queen Bee's</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus malesuada massa, vitae sagittis massa tristique eget. Nullam ornare elementum sapien vitae lacinia. Ut odio libero, accumsan eget ligula sed, egestas suscipit arcu. Vivamus hendrerit tincidunt arcu a faucibus. Maecenas ultrices urna sit amet commodo molestie. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus malesuada massa, vitae sagittis massa tristique eget. Nullam ornare elementum sapien vitae lacinia. Ut odio libero, accumsan eget ligula sed, egestas suscipit arcu. Vivamus hendrerit tincidunt arcu a faucibus. Maecenas ultrices urn sit amet commodo molestie. </p>
                         <div>
                             <div className='stars'>
                                 <h3>Rating:</h3>

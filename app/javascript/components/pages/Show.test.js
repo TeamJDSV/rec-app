@@ -14,4 +14,8 @@ describe("When Show renders", () => {
         const renderedText = render.find("div");
         expect(renderedText.length).toEqual(7);
     });
+    it("displays the Badge", () => {
+        const renderedText = render.find("Badge");
+        expect(renderedText.length).toEqual(1);
+    });
 });
