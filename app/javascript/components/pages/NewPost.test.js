@@ -36,3 +36,4 @@ describe("When NewPost renders", () => {
       expect(renderedText).toEqual(1)
     })
   })
+  
