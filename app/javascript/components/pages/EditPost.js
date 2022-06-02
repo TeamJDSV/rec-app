@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Form, FormGroup, Label, Input, Badge } from 'reactstrap'
+import { NavLink } from 'react-router-dom';
 
 class EditPost extends Component {
     render() {
@@ -97,10 +98,12 @@ class EditPost extends Component {
                     </div>
                     <div className='signupbutton'>
                         <Label>CHANGE THAT S#!T ?</Label>
+                        <NavLink to="/feed">
                         <Input
                             className='newbutton'
                             type="submit"
                             value='CHANGE THAT S#!T !' />
+                        </NavLink>
                     </div>
                 </div>
             </Form >
