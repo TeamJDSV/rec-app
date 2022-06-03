@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-
 import Header from './components/Header'
 import Footer from './components/Footer'
-
 import Home from './pages/Home'
 import Feed from './pages/Feed'
 import MyFeed from './pages/MyFeed'
@@ -21,12 +19,16 @@ import {
 
 
 class App extends Component {
-    constructor(props){
-      super(props)
-      this.state = {
-      // posts: posts
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [],
+      posts: [],
+    };
   }
+
+
+
 
   render() {
     return(

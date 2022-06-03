@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Singlecard from '../components/Singlecard';
+
 class Feed extends Component {
     render() {
         return (
