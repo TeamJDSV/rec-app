@@ -1,11 +1,42 @@
 import React, { Component } from 'react';
-import { Badge } from 'reactstrap'
+import { Badge,Card, CardTitle, NavItem, CardImg } from 'reactstrap';
 
 class Show extends Component {
     render() {
+        let {post} = this.props;
+        console.log(this.props)
         return (
             <>
-                <div className='showtop'>
+                {post && (
+                    <Card key={post.id}>
+                    <CardImg
+                        variant="top"
+                        alt="listing image"
+                        src={post.image}
+                        width="180px"
+                        height="286px"
+                        fluid
+                    />
+                    <CardTitle> Available Now </CardTitle>
+                    <h3>{post.location}</h3>
+                    <h3>{post.review}</h3>
+                    <h3>{post.star_rating}</h3>
+                    <NavItem>
+                        <a href={`/show/${post.id}`} className="nav-link">Go back</a>
+                    </NavItem>
+                    </Card>
+                )}
+            </>
+        )
+    }
+}
+
+export default Show;
+
+
+{/* SHOW DOES NOT WORK WHILE LOGGED IN 
+                 
+ <div className='showtop'>
                     <div className='showleft'>
                         <div className='username-pass'>
                             <img width='50' height='50' src='https://i1.sndcdn.com/avatars-si6VMrH1nO5JwyQe-jB5sJw-t500x500.jpg' />
@@ -14,7 +45,7 @@ class Show extends Component {
                         <Badge className='nightlife' color="black">
                             Night-Life
                         </Badge>
-                        <p className='locations'>Enbrayer Concert @ Queen Bee's</p>
+                        <p className='locations'>this.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus malesuada massa, vitae sagittis massa tristique eget. Nullam ornare elementum sapien vitae lacinia. Ut odio libero, accumsan eget ligula sed, egestas suscipit arcu. Vivamus hendrerit tincidunt arcu a faucibus. Maecenas ultrices urn sit amet commodo molestie. </p>
                         <div>
                             <div className='stars'>
@@ -37,12 +68,4 @@ class Show extends Component {
                 </div>
                 <div className='showbottom'>
                     Googlemaps
-                </div>
-
-            </>
-
-        );
-    }
-}
-
-export default Show;
+                </div>  */}

@@ -60,7 +60,7 @@ class AboutUs extends Component {
                         </div>
 
                         <div className='bio-card'>
-                            <img src='https://i1.sndcdn.com/avatars-si6VMrH1nO5JwyQe-jB5sJw-t500x500.jpg' width='300px' height='auto' />
+                            <img src='https://lh3.googleusercontent.com/K3vbK9UJq6KZq9vf2ThuVrTXVVStbdT45uv46pLNS6wQGGbxemsWLmPImfkygAHWuW3Va3KTOlvRHyZLaFV7Tk0D4swIhsOiEMODv-SJ79aYe_JVrsNA6p1uw64eBBKU6SS1LwQd=w2400' width='300px' height='auto' />
 
 
                             <div className='bio'>

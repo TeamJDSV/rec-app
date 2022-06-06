@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Signupform } from '../components/Signupform';
 
+
+
 import {
     Carousel,
     CarouselItem,
@@ -28,6 +30,7 @@ class Home extends Component {
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
     }
+    
 
 
     onExiting() {
@@ -106,7 +109,16 @@ class Home extends Component {
                                             </div>
                                             <h2>Enbrayer Concert @ Queen Bee's</h2>
                                         </div>
-                                        <div className='gogglemaps'>GOGGLE MAPS</div>
+                                        <div className='gogglemaps'>
+                                        <iframe
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                            allowFullscreen
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}>
+                                        </iframe>
+                                        </div>
                                     </Link>
                                     <Link to="/feed" className='home-card'>
                                         <div className='top-card'>
@@ -116,7 +128,16 @@ class Home extends Component {
                                             </div>
                                             <h2>Hong Kong</h2>
                                         </div>
-                                        <div className='gogglemaps'>GOGGLE MAPS</div>
+                                        <div className='gogglemaps'>
+                                        <iframe
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                            allowFullscreen
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}>
+                                        </iframe>
+                                        </div>
                                     </Link>
                                     <Link to="/feed" className='home-card'>
                                         <div className='top-card'>
@@ -126,7 +147,16 @@ class Home extends Component {
                                             </div>
                                             <h2>Facebook HQ</h2>
                                         </div>
-                                        <div className='gogglemaps'>GOGGLE MAPS</div>
+                                        <div className='gogglemaps'>
+                                        <iframe
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                            allowFullscreen
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}>
+                                        </iframe>
+                                        </div>
                                     </Link>
                                 </>
                             }
@@ -140,7 +170,8 @@ class Home extends Component {
                                             </div>
                                             <h2>Enbrayer Concert @ Queen Bee's</h2>
                                         </div>
-                                        <div className='gogglemaps'>GOGGLE MAPS</div>
+                                        <div className='gogglemaps'>
+                      </div>
                                     </a>
                                     <a href={this.props.new_user_route} className='home-card'>                                        <div className='top-card'>
                                         <div className='time'>
