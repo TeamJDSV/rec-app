@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Signupform } from './Signupform';
 import { Signinform } from './Signinform';
 import { Nav, NavItem, NavLink, Button, Modal, ModalBody, ModalHeader } from 'reactstrap'
+import { Link } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -15,6 +16,7 @@ class Header extends Component {
 
         this.toggleSignUp = this.toggleSignUp.bind(this);
         this.toggleSignIn = this.toggleSignIn.bind(this);
+        this.toggleMyShit = this.toggleMyShit.bind(this);
 
     }
 
@@ -31,6 +33,14 @@ class Header extends Component {
             signInModal: !this.state.signInModal
         });
     }
+
+    toggleMyShit() {
+        console.log(this.state.signInModal);
+        this.setState({
+            toggleMyShit: !this.state.toggleMyShit
+        });
+    }
+
     changeBackdrop(e) {
         let value = e.target.value;
         if (value !== 'static') {
@@ -58,9 +68,11 @@ class Header extends Component {
 
         return (
             <header className="header">
+                <Link to="/" className="nav-link">
+                     <img className='logonavbar' src="https://lh3.googleusercontent.com/CFtX1mz4KFimG8v8PNgduQtqjckq8pwF3qjdorJfMNSPZC-X6EzyEQ-WxPp-ofyA5M2kMhDIaQ4KoZCHU3Tt9eU1ZA6efp5CoEiLyOUhjT__iWYjzP_BPihtFRhQmYpggCVLT5o4=w2400" alt="" /></Link>
 
                 <Nav>
-                    <img width="50px" height="50px" src="https://lh3.googleusercontent.com/D30h22DafCF95u51zYWed7G2Y6N2dtUENoYBadTlFCvo_uEMPHeywxISg71UKAUC3V4NpoIQeEfttO5t3GtgjBGTgSfXwwC5bFitbrlrA8f_NNCUgZLTNyw3VJaCig14bqL2-hVn=w2400" alt="" />
+                
                     <div>
                         <Modal isOpen={this.state.signUpModal} toggle={this.toggleSignUp} >
                             <ModalHeader toggle={this.toggleSignUp}>SIGN UP</ModalHeader>
