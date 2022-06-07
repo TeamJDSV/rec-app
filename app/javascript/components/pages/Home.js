@@ -128,14 +128,14 @@ class Home extends Component {
                       <h2>Enbrayer Concert @ Queen Bee's</h2>
                     </div>
                     <div className="gogglemaps">
-                      <iframe
+                      {/* <iframe
                         width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
                         src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe>
+                      ></iframe> */}
                     </div>
                   </Link>
                   <Link to="/feed" className="home-card">
@@ -147,14 +147,14 @@ class Home extends Component {
                       <h2>Hong Kong</h2>
                     </div>
                     <div className="gogglemaps">
-                      <iframe
+                      {/* <iframe
                         width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
                         src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe>
+                      ></iframe> */}
                     </div>
                   </Link>
                   <Link to="/feed" className="home-card">
@@ -166,14 +166,14 @@ class Home extends Component {
                       <h2>Facebook HQ</h2>
                     </div>
                     <div className="gogglemaps">
-                      <iframe
+                      {/* <iframe
                         width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
                         src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe>
+                      ></iframe> */}
                     </div>
                   </Link>
                 </>
