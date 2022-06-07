@@ -31,6 +31,7 @@ class App extends Component {
   componentDidMount() {
     this.readPost();
     this.readUser();
+    const applePie = process.env.REACT_APP_MY_GOOGLE_API_KEY
   }
   
     readPost = () => {
@@ -88,7 +89,7 @@ class App extends Component {
         <Router>
             <Header {...this.props} />
           <Switch>
-            <Route exact path="/"  render= {() => <Home {...this.props} />} />
+            <Route exact path="/"  render= {() => <Home {...this.props} applePie={this.applePie}/>} />
             <Route path="/aboutus" component={AboutUs} />
             <Route path="/newpost" render={(props) => <NewPost createPost={this.createPost} />} />
 
@@ -105,6 +106,9 @@ class App extends Component {
             
             {logged_in && 
               <Route path="/myfeed" render= {() => <MyFeed posts={this.state.posts} users={this.state.users}/>} />
+            }
+            {logged_in && 
+              <Route path="/new" render= {() => <NewPost />} />
             }
             {logged_in &&
               <Route path="/newpost" render={(props) => <NewPost createPost={this.createPost} />} />
