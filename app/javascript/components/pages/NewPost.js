@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import { Form, FormGroup, Label, Input, Badge } from 'reactstrap'
 
 class NewPost extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+              submitted: false
+          }
+      }
+      handleChange = (e) => {
+          let { newPost } = this.state
+          newPost[e.target.name] = e.target.value
+          this.setState({newPost: newPost})
+        }
+        handleSubmit = () => {
+          this.props.createPost(this.state.newPost)
+          this.setState({submitted: true})
+        }
+
     render() {
         return (
             <Form className='form-fullpage-create'>
@@ -102,6 +118,8 @@ class NewPost extends Component {
                             type="submit"
                             value='POST THAT S#!T' />
                     </div>
+                    {this.state.submitted && <Redirect to="/feed" />}
+
                 </div>
             </Form >
 
