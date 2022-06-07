@@ -107,7 +107,7 @@ class Home extends Component {
                 <img
                   className="profile-img"
                   src="https://i1.sndcdn.com/avatars-si6VMrH1nO5JwyQe-jB5sJw-t500x500.jpg"
-                  width="300"
+                  width="290"
                   height="300"
                 />
                 <h2>Welcome {this.props.current_user.email}</h2>{" "}
@@ -129,12 +129,12 @@ class Home extends Component {
                     </div>
                     <div className="gogglemaps">
                       <iframe
-                        width="300"
+                        width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}
+                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
                       ></iframe>
                     </div>
                   </Link>
@@ -148,12 +148,12 @@ class Home extends Component {
                     </div>
                     <div className="gogglemaps">
                       <iframe
-                        width="300"
+                        width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}
+                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
                       ></iframe>
                     </div>
                   </Link>
@@ -167,12 +167,12 @@ class Home extends Component {
                     </div>
                     <div className="gogglemaps">
                       <iframe
-                        width="300"
+                        width="290"
                         height="200"
                         loading="lazy"
                         allowFullscreen
                         referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBhJ9tq-k8z7HGkaRJlv1Fc-wDGeQkn3pw&q=Petco+Park,San+Diego,CA`}
+                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
                       ></iframe>
                     </div>
                   </Link>

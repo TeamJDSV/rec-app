@@ -73,4 +73,6 @@ gem "devise", "~> 4.8"
 
 gem "bootstrap", "~> 5.1"
 
-gem "rspec-rails", "~> 5.1"
+group :development, :test do
+  gem 'rspec-rails', '~> 5.1.2'
+end

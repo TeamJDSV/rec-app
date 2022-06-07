@@ -7,8 +7,6 @@ class Singlecard extends Component {
 
   
     render() {
-
-       
         return (
             <div className='feed-card'>
                 <div className='feed-card-top'>

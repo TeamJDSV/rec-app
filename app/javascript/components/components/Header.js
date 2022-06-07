@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Signupform } from './Signupform';
 import { Signinform } from './Signinform';
-import { Nav, NavItem, NavLink, Button, Modal, ModalBody, ModalHeader } from 'reactstrap'
+import { Nav, NavItem, NavLink, Button, Modal, ModalBody, ModalHeader, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap'
 import { Link } from 'react-router-dom';
 
 
@@ -105,6 +105,30 @@ class Header extends Component {
                     <img width="50" height="50" src={`https://openweathermap.org/img/wn/${this.state.weatherAPI.weather && this.state.weatherAPI.weather[0].icon}@2x.png`} />
                 </div>
                 <Nav>
+                {logged_in &&
+                        <NavItem>
+                            <Dropdown toggle={this.toggleMyShit}
+                                isOpen={this.state.toggleMyShit}>
+                                <DropdownToggle className='nav-link' caret>
+                                    MY S#!T
+                                </DropdownToggle>
+                                <DropdownMenu >
+                                    <DropdownItem
+                                        tag={Link}
+                                        to="/newpost">
+                                        CREATE A POST
+                                    </DropdownItem>
+                                    <DropdownItem
+                                        tag={Link}
+                                        to="/feed">
+                                        LOOK AT MY S#!T
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </Dropdown>
+                        </NavItem>
+                    }
+
+                
                     {logged_in &&
                         <NavItem>
                             <a href={sign_out_route} className="nav-link">LOG OUT</a>
