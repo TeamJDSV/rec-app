@@ -58,7 +58,7 @@ class App extends Component {
     })
     .then(response => response.json())
     .then(() => this.readPost())
-    .catch(errors => console.log("Cat create errors:", errors))
+    .catch(errors => console.log("Post create errors:", errors))
   }
 
   deletePost = (id) => {
@@ -126,57 +126,6 @@ class App extends Component {
       </>
     );
   }
-
-
-
-
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     posts: [],
-  //     users: [],
-  //   };
-  // }
-
-  // readPost = () => {
-  //   fetch("/posts")
-  //     .then((response) => response.json())
-  //     .then((payload) => this.setState({ posts: payload }))
-  //     .catch((errors) => console.log("Post read errors:", errors));
-  // };
-
-  // readUser = () => {
-  //   fetch("/users")
-  //     .then((response) => response.json())
-  //     .then((payload) => this.setState({ users: payload }))
-  //     .catch((errors) => console.log("User read errors:", errors));
-  // };
-
-
-  // render() {
-  //   return(
-  //     <>
-  //       <Router>
-  //         <Header {...this.props} />
-  //         <Switch>
-  //           <Route exact path="/" component={Home} /> 
-  //           <Route 
-  //             path="/feed" 
-  //             render= {() => <Feed posts={this.state.posts} users={this.state.users}/>}
-  //           />
-  //           <Route path="/myfeed" component={MyFeed} />
-  //           <Route path="/show/:id" component={Show} />
-  //           <Route path="/newpost" component={NewPost} />
-  //           <Route path="/editpost" component={EditPost} />
-  //           <Route path="/aboutus" component={AboutUs} />
-  //           <Route component={NotFound}/>
-  //         </Switch>
-  //         <Footer/>
-  //       </Router>
-        
-  //     </>
-  //   );
-  // }
 }
 
 export default App

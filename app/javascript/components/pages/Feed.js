@@ -7,13 +7,6 @@ class Feed extends Component {
 
 
     render() {
-        // let nameSam = this.props.users
-        // console.log(nameSam)
-        // console.log(this.props.users.first)
-        // console.log("square above")
-        // console.log(this.props.posts)
-        // console.log("round above")
-        console.log(this.props)
 
         return (
             <div className="feedpage">
