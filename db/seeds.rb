@@ -31,7 +31,7 @@ posts = [
 
 
 posts.each do |post|
-    user.post.create post
+    Post.create post
   puts "creating post #{post}"
 end
 

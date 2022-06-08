@@ -34,7 +34,7 @@ class App extends Component {
     // const applePie = process.env.REACT_APP_MY_GOOGLE_API_KEY
   }
   
-    readPost = () => {
+    readPost = (newPost) => {
     fetch("/posts")
       .then((response) => response.json())
       .then((payload) => this.setState({ posts: payload }))
@@ -60,6 +60,19 @@ class App extends Component {
     .then(response => response.json())
     .then(() => this.readPost())
     .catch(errors => console.log("Post create errors:", errors))
+  }
+
+  createUser = (newUser) => {
+    fetch("/users", {
+      body: JSON.stringify(newUser),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+    .then(response => response.json())
+    .then(() => this.readUser())
+    .catch(errors => console.log("User create errors:", errors))
   }
 
   deletePost = (id) => {
@@ -107,11 +120,11 @@ class App extends Component {
             {logged_in && 
               <Route path="/myfeed" render= {() => <MyFeed posts={this.state.posts} users={this.state.users}/>} />
             }
-            {logged_in && 
+            {/* {logged_in && 
               <Route path="/new" render= {() => <NewPost />} />
-            }
+            } */}
             {logged_in &&
-              <Route path="/newpost" render={(props) => <NewPost createPost={this.createPost} />} />
+              <Route path="/newpost" render={() => {return <NewPost createPost={this.createPost} />}} />
             }
             {logged_in &&
               <Route path="/editpost" component={EditPost} />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Badge } from 'reactstrap'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 class Singlecard extends Component {
@@ -26,8 +26,8 @@ class Singlecard extends Component {
                                 </Badge>
                             </div>
                         </div>
-                        <p className='locations'> {this.props.post.location}</p>
-                        <Link className='showlink' to="/show/:id"> {this.props.post.review}</Link>
+                        <Link className='locations' to='/show/:id'>  {this.props.post.location}</Link>
+                        <p className='showlink'> {this.props.post.review}</p>
                         <div className='staredit'>
                             <div className='stars'>
                                 <h3>Rating:</h3>

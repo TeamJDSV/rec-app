@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input, Badge } from 'reactstrap'
+import { Form, FormGroup, Label, Input, Badge, Button } from 'reactstrap'
+import { Redirect } from 'react-router-dom'
 
 class NewPost extends Component {
     constructor(props){
         super(props)
         this.state = {
+            newPost: {
+                location: "",
+                review: "",
+                star_rating: "",
+                picture: "",
+            },
               submitted: false
           }
       }
       handleChange = (e) => {
           let { newPost } = this.state
-          newPost[e.target.name] = e.target.value
+          newPost[e.target.location] = e.target.value
           this.setState({newPost: newPost})
         }
         handleSubmit = () => {
@@ -19,6 +26,8 @@ class NewPost extends Component {
         }
 
     render() {
+        console.log(this.state)
+
         return (
             <Form className='form-fullpage-create'>
                 <div className='new-form'>
@@ -63,27 +72,34 @@ class NewPost extends Component {
                             name="location"
                             placeholder="Where you going?"
                             type="text"
+                            onChange={this.handleChange}
+                            value={this.state.newPost.location}
                         />
                     </FormGroup>
                     <FormGroup >
                         <Label for="status">
                             What do you have to say?
                         </Label>
-                        <Input className='new-text'
+                        <Input 
                             id="status"
-                            name="text"
-                            placeholder='What do you have to say?'
-                            type="textarea"
+                            name="status"
+                            placeholder="What do you have to say?"
+                            type="text"
+                            onChange={this.handleChange}
+                            value={this.state.newPost.review}
                         />
                     </FormGroup>
                     <FormGroup>
                         <Label for="exampleSelect">
                             Rating
+
                         </Label>
                         <Input
                             id="exampleSelect"
                             name="select"
                             type="select"
+                            onChange={this.handleChange}
+                            value={this.state.newPost.star_rating}
                         >
                             <option>
                                 1
@@ -113,12 +129,14 @@ class NewPost extends Component {
                     </div>
                     <div className='signupbutton'>
                         <div >ALL GOOD?</div>
-                        <Input
-                            className='newbutton'
-                            type="submit"
-                            value='POST THAT S#!T' />
+                        <Button 
+                        onClick={this.handleSubmit} 
+                        name="submit">
+                        Submit
+                        </Button>
+                            
+                        {this.state.submitted && <Redirect to="/feed" />}
                     </div>
-                    {this.state.submitted && <Redirect to="/feed" />}
 
                 </div>
             </Form >

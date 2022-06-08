@@ -4,6 +4,7 @@ import { Badge,Card, CardTitle, NavItem, CardImg } from 'reactstrap';
 class Show extends Component {
     render() {
         let {post} = this.props;
+        console.log(this.props)
         return (
             <>
                 {post && (
