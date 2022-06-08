@@ -12,7 +12,7 @@ user1 = User.create email: 'test1@test.com', password: 'password', password_conf
 user2 = User.create email: 'test2@test.com', password: 'password', password_confirmation: 'password', name: 'Darwin', picture: "https://lh3.googleusercontent.com/kiK6RmV1JCI-SxK14DoXFj183X5P013yVH3E01k5l3G-g7V2iYtT0HuS-dbuRLeBAV7eMSVBbezEWwAUqmdose1np2jTflfl-ALYXLVB7eE9tfq-LjljgtaA5c7URBWPNJFqGmrs=w2400", userLocation:'San Diego', aboutme:"That's all +2." 
 
 
-posts = [
+posts = [    
     { 
     location: "Queen Bee's", 
     review:'LIT AF!?', 

@@ -46,10 +46,6 @@ class Singlecard extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='feedbottom'>
-                    Googlemaps
-                </div>
-
             </div>
         );
     }

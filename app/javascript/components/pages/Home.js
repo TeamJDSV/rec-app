@@ -128,14 +128,7 @@ class Home extends Component {
                       <h2>Enbrayer Concert @ Queen Bee's</h2>
                     </div>
                     <div className="gogglemaps">
-                      {/* <iframe
-                        width="290"
-                        height="200"
-                        loading="lazy"
-                        allowFullscreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe> */}
+                    CHECK OUT THIS REVIEW!
                     </div>
                   </Link>
                   <Link to="/feed" className="home-card">
@@ -147,14 +140,7 @@ class Home extends Component {
                       <h2>Hong Kong</h2>
                     </div>
                     <div className="gogglemaps">
-                      {/* <iframe
-                        width="290"
-                        height="200"
-                        loading="lazy"
-                        allowFullscreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe> */}
+                     CHECK OUT THIS REVIEW!
                     </div>
                   </Link>
                   <Link to="/feed" className="home-card">
@@ -166,14 +152,7 @@ class Home extends Component {
                       <h2>Facebook HQ</h2>
                     </div>
                     <div className="gogglemaps">
-                      {/* <iframe
-                        width="290"
-                        height="200"
-                        loading="lazy"
-                        allowFullscreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=nope&q=Petco+Park,San+Diego,CA`}
-                      ></iframe> */}
+                    CHECK OUT THIS REVIEW!
                     </div>
                   </Link>
                 </>
@@ -188,7 +167,7 @@ class Home extends Component {
                       </div>
                       <h2>Enbrayer Concert @ Queen Bee's</h2>
                     </div>
-                    <div className="gogglemaps"></div>
+                    <div className="gogglemaps"> CHECK OUT THIS REVIEW!</div>
                   </a>
                   <a href={this.props.new_user_route} className="home-card">
                     {" "}
@@ -199,7 +178,7 @@ class Home extends Component {
                       </div>
                       <h2>Hong Kong</h2>
                     </div>
-                    <div className="gogglemaps">GOGGLE MAPS</div>
+                    <div className="gogglemaps">CHECK OUT THIS REVIEW!</div>
                   </a>
                   <a href={this.props.new_user_route} className="home-card">
                     {" "}
@@ -210,7 +189,7 @@ class Home extends Component {
                       </div>
                       <h2>Facebook HQ</h2>
                     </div>
-                    <div className="gogglemaps">GOGGLE MAPS</div>
+                    <div className="gogglemaps">CHECK OUT THIS REVIEW!</div>
                   </a>
                 </>
               )}
